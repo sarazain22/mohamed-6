@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="mohamed" content="this is my first html page">
+    <title>رسائلي للدكتور محمد</title>  <!-- Updated title for better context -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #f0f8ff, #e6e6fa);
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            text-align: right;
+            transition: background 0.5s ease;
+        }
+        h1 {
+            color: #4a90e2;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            animation: fadeIn 2s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h3, h4, h5 {
+            color: #5cb85c;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        h5 {
+            font-size: 1em;
+            color: #d9534f;
+        }
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(to right, #f0f8ff, #e6e6fa, #f0f8ff);
+            margin: 20px 0;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 100%;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+        a {
+            color: #337ab7;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s, transform 0.2s;
+            display: inline-block;
+        }
+        a:hover {
+            background-color: #e6e6fa;
+            color: #5cb85c;
+            transform: translateY(-2px);
+        }
+        .section {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            animation: slideIn 1s ease-out;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        .note {
+            background: #fffacd;
+            padding: 10px;
+            border-left: 5px solid #d9534f;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .accordion {
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            outline: none;
+            padding: 15px;
+            width: 100%;
+            text-align: right;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .accordion:hover {
+            background-color: #e6e6fa;
+        }
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+            border-radius: 0 0 5px 5px;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.9);
+            animation: zoomIn 0.3s ease;
+        }
+        @keyframes zoomIn {
+            from { transform: scale(0); }
+            to { transform: scale(1); }
+        }
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        .close:hover {
+            color: #bbb;
+        }
+        .nav {
+            background: #4a90e2;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="#intro">المقدمة</a>
+        <a href="#letters1">الرسائل الأولى</a>
+        <a href="#letters2">الرسائل الثانية</a>
+        <a href="#questions">الأسئلة</a>
+        <a href="#holidays">المناسبات</a>
+    </div>
+
+    <h1 id="intro">ازيك يا دكتور</h1>
+    <div class="section">
+        انا من زمان اوي وانا بيني وبين نفسي كدا قايلة ان اول حاجة هعملها في شغلي هتبقي ليك انت حاجة عشانك كان في بالي الصراحة فكرة حاجة تجمع القصص بتاعتنا سوا او مكان اعمل في افلام لكل حاجة حلوة بينا بس جت كدا بقا واديه بيتعمل عشان اعرفك حجات كتير بس واحنا مش سوا  
+    </div>
+    <hr>
+    <div class="note">
+        <h5> <u>note:</u>  اضغط عليهم الله يسترك مش عايزين ذكاء </h5>
+    </div>
+    <div class="note">
+        <h5> <u>note:</u>  اوعي تفتح حاجة قبل ما يجي اوانها يعني لازم اكون محتاجها عشان تفتح اي جواب فيهم</h5>
+    </div>
+    <div class="note">
+        <h5><u>note:</u> صفحات الجوابات ابدأ اقرأ فيها من الصفحة الشمال الاول وبعدين اليمين</h5>
+    </div>
+    <hr>
+    <img src="tom.png" alt="صورة توم" onclick="openModal(this.src)">  <!-- Added alt text -->
+    
+    <button class="accordion" id="letters1">لما تبقي زعلان او مضايق من اي حاجة غيري دوس علي واحد من دول</button>
+    <div class="panel">
+        <a href="message 1.1.png" target="_blank" title="click here"> letter 1</a>
+        <br>
+        <a href="https://youtu.be/Gp4BcK8jIa8?si=tsQP6Y9WN9YjK3RB" target="_blank" title="click here">letter 2</a>
+        <br>
+        <a href="message 1.3 .png" target="_blank" title="click here"> letter 3</a>
+        <br>
+        <a href="message 1.png" target="_blank" title="click here"> letter 4</a>
+        <br>
+        <a href="message 1.4.png" target="_blank" title="click here"> letter 5</a>
+        <br>
+        <a href="https://youtube.com/shorts/C9uC7tWT0Fs?si=Gan9wJCy2E4CoOgG" target="_blank" title="click here">letter 6</a>
+        <br>
+    </div>
+    
+    <button class="accordion" id="letters2">لما تبقي متضايق مني تعالي هنا</button>
+    <div class="panel">
+        <a href="message 2.1 .png" target="_blank" title="click here"> letter 1</a>
+        <br>
+        <a href="message 2.2.png" target="_blank" title="click here"> letter 2</a>
+        <br>
+        <a href="message 2.3.png" target="_blank" title="click here">letter 3</a>
+        <br>
+        <a href="message 2.4.png" target="_blank" title="click here">letter 4</a>
+        <br>
+        <a href="اعتراف بالغلط.png" target="_blank" title="click here">letter 5</a>
+        <br>
+        <a href="خوف وفضفضة.png" target="_blank" title="click here">letter 6 part 1</a>
+        &nbsp;
+        <a href="خوف وفضفضة2.png" target="_blank" title="click here"> letter 6 part 2 </a>
+        &nbsp;
+        <a href="خوف وفضفضة 3.png" target="_blank" title="click here"> letter 6 part 3</a>
+        <br>
+    </div>
+    
+    <button class="accordion">لو حسيت انك عايز تسمع مني حاجة ممكن تريحك</button>
+    <div class="panel">
+        <a href="klam mni.png" target="_blank" title="click here"> letter 1 part 1</a>  <!-- Fixed backslash to forward slash -->
+        &nbsp;
+        <a href="klam mni 2.png" target="_blank" title="click here"> letter 1 part 2</a>
+        &nbsp;
+        <a href="klam mni 3.png" target="_blank" title="click here"> letter 1 part 3</a>
+        &nbsp;
+        <a href="klam mni 5.png" target="_blank" title="click here"> letter 2</a>
+        &nbsp;
+        <a href="كلام مني.png" target="_blank" title="click here"> letter 3</a>
+    </div>
+    
+    <button class="accordion" id="questions">دول اسألة سالتهالي وانت هتعوز تسمع الاجابات دي اكتر من مرة</button>
+    <div class="panel">
+        <h4>هيا العيون ممكن تكذب ؟</h4>
+        <a href="اجاية العين.png" target="_blank" title="click here"> answer part 1</a>
+        &nbsp;
+        <a href="اجابة العين 2.png" target="_blank" title="click here"> answer part 2</a>
+        <br>
+        <h4>هوا انت ليه ممكن تصدق ان انا اتغيرت بجد ؟</h4>
+        <a href="اتغيرت 1.png" target="_blank" title="click here"> answer part 1</a>
+        &nbsp;
+        <a href="اتغيرت 2.png" target="_blank" title="click here"> answer part 2</a>
+        <br>
+        <h4>ايه اللي يخليني اتغير دلوقتي مش اي مرة من اللي فاتو ؟</h4>
+        <a href="اجابة 3.png" target="_blank" title="click here">answer</a>
+        <br>
+        <h4>هوا انا بحبك بجد وعايزاك ولا بحب حبك ؟</h4>
+        <a href="الحب افعال.png" target="_blank" title="click here">answer</a>
+        <br>
+        <h4>طب لو انا فعلا بحبك ازاي عرفت اذيك كدا؟</h4>
+        <a href="الاذية.png" target="_blank" title="click here"> answer</a>
+        <br>
+        <h4>ايه اللي يخليك تضمن اني اتغيرت بجد؟</h4>
+        <a href="Screenshot 2026-01-30 185007.png" target="_blank" title="click here"> answer part 1</a>
+        &nbsp;
+        <a href="22.png" target="_blank" title="click here">answer part 2</a>
+        <br>
+        <h4>ايه اللي يخليك تضمن اني معملش كدا تاني ؟</h4>
+        <a href="بقلبي سلام.png" target="_blank" title="click here">answer</a>
+        <br>
+        <h4>انا ازاي قدرت اتعامل معاك عادي وازاي عرفت ابص في عينيك وانا مخبية عليك كل دا ؟</h4>
+        <a href="الذنب.png" target="_blank" title="click here">answer</a>
+        <br>
+    </div>
+     <button class="accordion" id="extra">باقي جوابات عيد ميلادك</button>
+     <div>
+        <p>مش عارفة المفروض تشوقهم دلوقتي ولا لا بس خايفة معرفش اديهملك تاني</p>
+         <a href="باقي القصة .png" target="_blank" title="click here"> 1 باقي القصة </a>
+         <a href="باقي القصة 2.png" target="_blank" title="click here"> 2 باقي القصة </a>
+         <hr>
+         <a href="باقي الجوابات المكتوبة 1.png" target="_blank" title="click here"> letter 1</a>
+         <hr>
+         <a href="باقي الجوابات المكتوبة 3.1.png" target="_blank" title="click here"> letter 2 part 1</a>
+         <a href="باقي الجوابات المكتوبة 3.2.png" target="_blank" title="click here"> letter 2 part 1</a>
+         <hr>
+         <a href="بحر 1.png" target="_blank" title="click here"> letter 3 part 1</a>
+         <a href=" بحر 2.png" target="_blank" title="click here"> letter 3 part 2</a>
+         <hr>
+         <a href="باقي الحوابات شكر .png" target="_blank" title="click here"> letter 4</a>
+         
+         
+
+     </div>
+    
+    <button class="accordion" id="holidays">المناسبات</button>
+    <div class="panel">
+        <h3>رمضان كريم عشان مش هعرف ابقي موجودة</h3>
+        <a href="رمضان كريم.png" target="_blank" title="click here">RAMADAN KAREEM </a>
+        <hr>
+        <h3>لو العيد جه ومعرفتش اكون موجودة</h3>
+        <a href="عيد سعيد.png" target="_blank" title="click here">3ID SAEED</a>
+        <hr>
+        <h3> العيد الكبير (ان شاء الله متحتاجش تفتحها)</h3>
+        <a href="العيد الكبير.png" target="_blank" title="click here">3ID MOUBARK </a>
+    </div>
+
+    <!-- Modal for images -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <script>
+        // Accordion functionality
+        var acc = document.getElementsByClassName("accordion");
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+
+        // Modal functionality
+        function openModal(src) {
+            var modal = document.getElementById("myModal");
+            var modalImg = document.getElementById("img01");
+            modal.style.display = "block";
+            modalImg.src = src;
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        // Smooth scrolling for nav
+        document.querySelectorAll('.nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

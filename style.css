@@ -1,0 +1,156 @@
+body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #f0f8ff, #e6e6fa);
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            text-align: right;
+            transition: background 0.5s ease;
+        }
+        h1 {
+            color: #4a90e2;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            animation: fadeIn 2s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h3, h4, h5 {
+            color: #5cb85c;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        h5 {
+            font-size: 1em;
+            color: #d9534f;
+        }
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(to right, #f0f8ff, #e6e6fa, #f0f8ff);
+            margin: 20px 0;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 100%;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+        a {
+            color: #337ab7;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s, transform 0.2s;
+            display: inline-block;
+        }
+        a:hover {
+            background-color: #e6e6fa;
+            color: #5cb85c;
+            transform: translateY(-2px);
+        }
+        .section {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            animation: slideIn 1s ease-out;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        .note {
+            background: #fffacd;
+            padding: 10px;
+            border-left: 5px solid #d9534f;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .accordion {
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            outline: none;
+            padding: 15px;
+            width: 100%;
+            text-align: right;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .accordion:hover {
+            background-color: #e6e6fa;
+        }
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+            border-radius: 0 0 5px 5px;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.9);
+            animation: zoomIn 0.3s ease;
+        }
+        @keyframes zoomIn {
+            from { transform: scale(0); }
+            to { transform: scale(1); }
+        }
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        .close:hover {
+            color: #bbb;
+        }
+        .nav {
+            background: #4a90e2;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
